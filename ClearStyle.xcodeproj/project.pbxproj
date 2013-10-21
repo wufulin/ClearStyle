@@ -18,6 +18,10 @@
 		691EFEA71814C64D0090A53C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 691EFEA61814C64D0090A53C /* Default-568h@2x.png */; };
 		691EFEAA1814C64D0090A53C /* FLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EFEA91814C64D0090A53C /* FLViewController.m */; };
 		691EFEAD1814C64D0090A53C /* FLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691EFEAB1814C64D0090A53C /* FLViewController.xib */; };
+		691EFEB51814C8190090A53C /* FLToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EFEB41814C8190090A53C /* FLToDoItem.m */; };
+		691EFEB81814CEA40090A53C /* FLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EFEB71814CEA40090A53C /* FLTableViewCell.m */; };
+		691EFEBA1814D05C0090A53C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691EFEB91814D05C0090A53C /* QuartzCore.framework */; };
+		691EFEC61814FF0C0090A53C /* FLStrikethroughLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EFEC51814FF0C0090A53C /* FLStrikethroughLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,14 @@
 		691EFEA81814C64D0090A53C /* FLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLViewController.h; sourceTree = "<group>"; };
 		691EFEA91814C64D0090A53C /* FLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLViewController.m; sourceTree = "<group>"; };
 		691EFEAC1814C64D0090A53C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FLViewController.xib; sourceTree = "<group>"; };
+		691EFEB31814C8190090A53C /* FLToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLToDoItem.h; sourceTree = "<group>"; };
+		691EFEB41814C8190090A53C /* FLToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLToDoItem.m; sourceTree = "<group>"; };
+		691EFEB61814CEA40090A53C /* FLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTableViewCell.h; sourceTree = "<group>"; };
+		691EFEB71814CEA40090A53C /* FLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTableViewCell.m; sourceTree = "<group>"; };
+		691EFEB91814D05C0090A53C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		691EFEBF1814FB620090A53C /* FLTableViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTableViewCellDelegate.h; sourceTree = "<group>"; };
+		691EFEC41814FF0C0090A53C /* FLStrikethroughLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLStrikethroughLabel.h; sourceTree = "<group>"; };
+		691EFEC51814FF0C0090A53C /* FLStrikethroughLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLStrikethroughLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691EFEBA1814D05C0090A53C /* QuartzCore.framework in Frameworks */,
 				691EFE911814C64D0090A53C /* UIKit.framework in Frameworks */,
 				691EFE931814C64D0090A53C /* Foundation.framework in Frameworks */,
 				691EFE951814C64D0090A53C /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +86,7 @@
 		691EFE8F1814C64D0090A53C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				691EFEB91814D05C0090A53C /* QuartzCore.framework */,
 				691EFE901814C64D0090A53C /* UIKit.framework */,
 				691EFE921814C64D0090A53C /* Foundation.framework */,
 				691EFE941814C64D0090A53C /* CoreGraphics.framework */,
@@ -83,11 +97,18 @@
 		691EFE961814C64D0090A53C /* ClearStyle */ = {
 			isa = PBXGroup;
 			children = (
+				691EFEC41814FF0C0090A53C /* FLStrikethroughLabel.h */,
+				691EFEC51814FF0C0090A53C /* FLStrikethroughLabel.m */,
+				691EFEBF1814FB620090A53C /* FLTableViewCellDelegate.h */,
 				691EFE9F1814C64D0090A53C /* FLAppDelegate.h */,
 				691EFEA01814C64D0090A53C /* FLAppDelegate.m */,
 				691EFEA81814C64D0090A53C /* FLViewController.h */,
 				691EFEA91814C64D0090A53C /* FLViewController.m */,
 				691EFEAB1814C64D0090A53C /* FLViewController.xib */,
+				691EFEB31814C8190090A53C /* FLToDoItem.h */,
+				691EFEB41814C8190090A53C /* FLToDoItem.m */,
+				691EFEB61814CEA40090A53C /* FLTableViewCell.h */,
+				691EFEB71814CEA40090A53C /* FLTableViewCell.m */,
 				691EFE971814C64D0090A53C /* Supporting Files */,
 			);
 			path = ClearStyle;
@@ -177,6 +198,9 @@
 				691EFE9D1814C64D0090A53C /* main.m in Sources */,
 				691EFEA11814C64D0090A53C /* FLAppDelegate.m in Sources */,
 				691EFEAA1814C64D0090A53C /* FLViewController.m in Sources */,
+				691EFEB51814C8190090A53C /* FLToDoItem.m in Sources */,
+				691EFEB81814CEA40090A53C /* FLTableViewCell.m in Sources */,
+				691EFEC61814FF0C0090A53C /* FLStrikethroughLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +251,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -251,7 +275,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -264,6 +288,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClearStyle/ClearStyle-Prefix.pch";
 				INFOPLIST_FILE = "ClearStyle/ClearStyle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -275,6 +300,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClearStyle/ClearStyle-Prefix.pch";
 				INFOPLIST_FILE = "ClearStyle/ClearStyle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

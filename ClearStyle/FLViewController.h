@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FLTableViewCellDelegate.h"
 
-@interface FLViewController : UIViewController
+@interface FLViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, FLTableViewCellDelegate>
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
